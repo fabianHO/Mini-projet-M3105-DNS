@@ -1,0 +1,14 @@
+;------------------------------db.10.204.13 ---------------------------------
+$TTL 1h;
+@ IN SOA RT.HO-Fabian.local. fabian.ho.etu.umontpellier.fr. (
+	2015091301 ; Serial
+	3600 ; Refresh(1h)
+	3600 ; Retry(1h)
+	3600000 ; Expire(41j)
+	86400 ) ; Minimum(224h)
+
+@	IN NS	RT.HO-Fabian.local.
+
+
+$ORIGIN 13.204.10.in-addr.arpa.
+22 IN PTR RT.HO-Fabian.local.

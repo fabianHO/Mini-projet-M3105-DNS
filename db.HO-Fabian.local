@@ -1,0 +1,18 @@
+;----------------------------- HO-Fabian.local.master -----------------------
+
+$TTL 1h;
+@ SOA RT.HO-Fabian.local. fabian.ho.etu.umontpellier.fr. (
+	2015091301 ; Serial
+	3600 ; Refresh(6h)
+	3600 ; Retry(6h)
+	3600000 ; Expire(41j)
+	86400 ) ; Minimum(24h)
+$ORIGIN HO-Fabian.local.
+@	IN	NS RT
+@	IN	MX	0	mail.HO-Fabian.local.
+imap	CNAME	mail.HO-Fabian.local.
+pop	CNAME	mail.HO-Fabian.local.
+smtp	CNAME	mail.HO-Fabian.local.
+
+RT	IN	A	10.204.13.22
+mail	IN	A	10.204.13.22
